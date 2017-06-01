@@ -13,7 +13,7 @@ To deploy (assuming that your RPi3's micro SD-card's first partition is mounted 
 ```console
 pi64 ~ # cp /boot/kernel8.img{,.old}
 pi64 ~ # wget -c https://github.com/sakaki-/bcmrpi3-kernel/releases/download/a.b.c.d/bcmrpi3-kernel-a.b.c.d.tar.xz
-pi64 ~ # tar -Jf bcmrpi3-kernel-a.b.c.d.tar.xz -C /
-pi64 ~ # reboot
+pi64 ~ # tar -xJf bcmrpi3-kernel-a.b.c.d.tar.xz -C /
+pi64 ~ # sync && reboot
 ```
 These prebuilt kernels are provided as a convenience only. Use at your own risk!
