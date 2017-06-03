@@ -42,7 +42,7 @@ pi64 ~ # sync && reboot
 Alternatively, if you have my [rpi3 overlay](https://github.com/sakaki-/rpi3-overlay) installed (it is pre-installed on the [gentoo-on-rpi3-64bit](https://github.com/sakaki-/gentoo-on-rpi3-64bit) image), you can simply emerge the `bcmrpi3-kernel-bin` package (a new ebuild is automatically created to mirror each release here). For example, to install the latest available version (and start using it):
 ```console
 pi64 ~ # emaint sync --repo rpi3
-pi64 ~ # emerge -av bcmrpi-kernel-bin
+pi64 ~ # emerge -av bcmrpi3-kernel-bin
 pi64 ~ # reboot
 ```
 
