@@ -7,7 +7,11 @@ Automated build of the latest 64-bit `bcmrpi3_defconfig` Linux kernel for the Ra
 
 This project contains a weekly autobuild of the default branch of the [official Raspberry Pi Linux source tree](https://github.com/raspberrypi/linux), for the [64-bit Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/).
 
-Builds are performed with the standard `bcmrpi3_defconfig`, with the only change being that the first 12 hex digits of the tip commit SHA1 hash are appended to `CONFIG_LOCALVERSION` (with a separating hyphen) before building. A new build tarball is automatically created and uploaded as a release asset each week (unless the tip of the default branch is unchanged from the prior week, or an error occurs during the build process).
+Builds are performed with the standard `bcmrpi3_defconfig`, with the only change being that the first 12 hex digits of the tip commit SHA1 hash are appended to `CONFIG_LOCALVERSION` (with a separating hyphen) before building.
+
+> Builds from the >= 4.14.y branch also have `CONFIG_MMC_SDHCI_IPROC=m` set, as this [is necessary](https://forums.gentoo.org/viewtopic-p-8184824.html#8184824) to use the RPi3's onboard WiFi adaptor.
+
+A new build tarball is automatically created and uploaded as a release asset each week (unless the tip of the default branch is unchanged from the prior week, or an error occurs during the build process).
 
 > The default branch is used, as that is generally given most attention for e.g. VC4 backports.
 
