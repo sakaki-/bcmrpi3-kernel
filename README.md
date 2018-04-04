@@ -3,25 +3,25 @@ Automated build of the latest 64-bit `bcmrpi3_defconfig` Linux kernel for the Ra
 
 ## Description
 
-<img src="https://raw.githubusercontent.com/sakaki-/resources/master/raspberrypi/pi3/Raspberry_Pi_3_B.jpg" alt="Raspberry Pi 3 B" width="250px" align="right"/>
+<img src="https://raw.githubusercontent.com/sakaki-/resources/master/raspberrypi/pi3/Raspberry_Pi_3_B_and_B_plus.jpg" alt="Raspberry Pi 3 B and B+" width="250px" align="right"/>
 
-This project contains a weekly autobuild of the default branch of the [official Raspberry Pi Linux source tree](https://github.com/raspberrypi/linux), for the [64-bit Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/).
+This project contains a weekly autobuild of the default branch (currently, `rpi-4.14.y`) of the [official Raspberry Pi Linux source tree](https://github.com/raspberrypi/linux), for the [64-bit Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) and [B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/).
 
 Builds are performed with the standard `bcmrpi3_defconfig`, with the only change being that the first 12 hex digits of the tip commit SHA1 hash are appended to `CONFIG_LOCALVERSION` (with a separating hyphen) before building.
-
-> Builds from the >= 4.14.y branch also have `CONFIG_MMC_SDHCI_IPROC=m` set, as this [is necessary](https://forums.gentoo.org/viewtopic-p-8184824.html#8184824) to use the RPi3's onboard WiFi adaptor.
 
 A new build tarball is automatically created and uploaded as a release asset each week (unless the tip of the default branch is unchanged from the prior week, or an error occurs during the build process).
 
 > The default branch is used, as that is generally given most attention for e.g. VC4 backports.
 
-For example, on 1 June 2017, the default branch was `rpi-4.9.y` and the latest commit was `e5bd734340e6871e4e9ef5ff66e61197eb8ece30` (the short form of which is `e5bd734340e6`). The created release was [4.9.30.20170601](https://github.com/sakaki-/bcmrpi3-kernel/releases/4.9.30.20170601), within which the kernel tarball was `bcmrpi3-kernel-4.9.30.20170601.tar.xz`, and the corresponding kernel release name was `4.9.30-v8-e5bd734340e6+`.
+As an (historical) example, on 1 June 2017, the default branch was `rpi-4.9.y` (NB, it is `rpi-4.14.y` now) and the latest commit was `e5bd734340e6871e4e9ef5ff66e61197eb8ece30` (the short form of which is `e5bd734340e6`). The created release was [4.9.30.20170601](https://github.com/sakaki-/bcmrpi3-kernel/releases/4.9.30.20170601), within which the kernel tarball was `bcmrpi3-kernel-4.9.30.20170601.tar.xz`, and the corresponding kernel release name was `4.9.30-v8-e5bd734340e6+`.
 
-Each kernel release tarball provides the following files:
+Each kernel release tarball currently provides the following files:
 * `/boot/kernel8.img` (this is the bootable 64-bit kernel);
-* `/boot/bcm-2710-rpi-3-b.dtb` and `/boot/bcm-2837-rpi-3-b.dtb` (the device tree blobs);
+* `/boot/bcm-2710-rpi-3-b.dtb`, `/boot/bcm-2710-rpi-3-b-plus.dtb` and `/boot/bcm-2837-rpi-3-b.dtb` (the device tree blobs);
 * `/lib/modules/<kernel release name>/...` (the module set for the kernel);
 * `/lib/firmware/...` (the kernel-built firmware).
+
+> The `/boot/bcm-2710-rpi-3-b-plus.dtb` file is only included in more recent builds.
 
 The current kernel tarball may be downloaded from the link below (or via `wget`, or via the corresponding `bcmrpi-kernel-bin` ebuild, per the [instructions following](#installation)):
 
