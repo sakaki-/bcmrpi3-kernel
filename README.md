@@ -1,5 +1,5 @@
 # bcmrpi3-kernel
-Automated build of the latest 64-bit `bcmrpi3_defconfig` Linux kernel for the Raspberry Pi 3 model B, updated weekly.
+Automated build of the latest 64-bit `bcmrpi3_defconfig` Linux kernel for the Raspberry Pi 3 model B and B+, updated weekly.
 
 ## Description
 
