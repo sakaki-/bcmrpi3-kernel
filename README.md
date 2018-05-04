@@ -19,7 +19,7 @@ Each kernel release tarball currently provides the following files:
 * `/boot/kernel8.img` (this is the bootable 64-bit kernel);
 * `/boot/bcm-2710-rpi-3-b.dtb`, `/boot/bcm-2710-rpi-3-b-plus.dtb` and `/boot/bcm-2837-rpi-3-b.dtb` (the device tree blobs);
 * `/lib/modules/<kernel release name>/...` (the module set for the kernel);
-* `/lib/firmware/...` (the kernel-built firmware).
+* `/lib/firmware/...` (the kernel-built firmware, for [< 4.14 only](http://lkml.iu.edu/hypermail/linux/kernel/1709.1/04650.html)).
 
 > The `/boot/bcm-2710-rpi-3-b-plus.dtb` file is only included in more recent builds.
 
