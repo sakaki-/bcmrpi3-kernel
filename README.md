@@ -9,6 +9,8 @@ This project contains a weekly autobuild of the default branch (currently, `rpi-
 
 Builds are performed with the standard `bcmrpi3_defconfig`, with the only change being that the first 12 hex digits of the tip commit SHA1 hash are appended to `CONFIG_LOCALVERSION` (with a separating hyphen) before building.
 
+> Please note that as the purpose of this project is to provide a 'vanilla' build of the upstream `bcmrpi3_defconfig`, PRs requesting config changes will be rejected. Instead, please see the sister [`bcmrpi3-kernel-bis`](https://github.com/sakaki-/bcmrpi3-kernel-bis) project, which has a weekly autobuild (with versions mirroring this one, using a tweaked `bcmrpi3_defconfig`), and where such PRs *will* be accepted for review.
+
 A new build tarball is automatically created and uploaded as a release asset each week (unless the tip of the default branch is unchanged from the prior week, or an error occurs during the build process).
 
 > The default branch is used, as that is generally given most attention for e.g. VC4 backports.
