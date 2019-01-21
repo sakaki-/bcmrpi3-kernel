@@ -19,6 +19,9 @@ As an (historical) example, on 1 June 2017, the default branch was `rpi-4.9.y` (
 
 Each kernel release tarball currently provides the following files:
 * `/boot/kernel8.img` (this is the bootable 64-bit kernel);
+* `/boot/COPYING.linux` (the kernel's license file);
+* `/boot/config` (the configuration used to build the kernel);
+* `/boot/System.map` (the kernel's symbol table);
 * `/boot/bcm-2710-rpi-3-b.dtb`, `/boot/bcm-2710-rpi-3-b-plus.dtb` and `/boot/bcm-2837-rpi-3-b.dtb` (the device tree blobs);
 * `/lib/modules/<kernel release name>/...` (the module set for the kernel);
 * `/lib/firmware/...` (the kernel-built firmware, for [< 4.14 only](http://lkml.iu.edu/hypermail/linux/kernel/1709.1/04650.html)).
