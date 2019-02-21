@@ -5,7 +5,7 @@ Automated build of the latest 64-bit `bcmrpi3_defconfig` Linux kernel for the Ra
 
 <img src="https://raw.githubusercontent.com/sakaki-/resources/master/raspberrypi/pi3/Raspberry_Pi_3_B_and_B_plus.jpg" alt="Raspberry Pi 3 B and B+" width="250px" align="right"/>
 
-This project contains a weekly autobuild of the default branch (currently, `rpi-4.14.y`) of the [official Raspberry Pi Linux source tree](https://github.com/raspberrypi/linux), for the [64-bit Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) and [B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/).
+This project contains a weekly autobuild of the default branch (currently, `rpi-4.19.y`) of the [official Raspberry Pi Linux source tree](https://github.com/raspberrypi/linux), for the [64-bit Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) and [B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/).
 
 Builds are performed with the standard `bcmrpi3_defconfig`, with the only change being that the first 12 hex digits of the tip commit SHA1 hash are appended to `CONFIG_LOCALVERSION` (with a separating hyphen) before building.
 
@@ -15,7 +15,7 @@ A new build tarball is automatically created and uploaded as a release asset eac
 
 > The default branch is used, as that is generally given most attention for e.g. VC4 backports.
 
-As an (historical) example, on 1 June 2017, the default branch was `rpi-4.9.y` (NB, it is `rpi-4.14.y` now) and the latest commit was `e5bd734340e6871e4e9ef5ff66e61197eb8ece30` (the short form of which is `e5bd734340e6`). The created release was [4.9.30.20170601](https://github.com/sakaki-/bcmrpi3-kernel/releases/4.9.30.20170601), within which the kernel tarball was `bcmrpi3-kernel-4.9.30.20170601.tar.xz`, and the corresponding kernel release name was `4.9.30-v8-e5bd734340e6+`.
+As an (historical) example, on 1 June 2017, the default branch was `rpi-4.9.y` (NB, it is `rpi-4.19.y` now) and the latest commit was `e5bd734340e6871e4e9ef5ff66e61197eb8ece30` (the short form of which is `e5bd734340e6`). The created release was [4.9.30.20170601](https://github.com/sakaki-/bcmrpi3-kernel/releases/4.9.30.20170601), within which the kernel tarball was `bcmrpi3-kernel-4.9.30.20170601.tar.xz`, and the corresponding kernel release name was `4.9.30-v8-e5bd734340e6+`.
 
 Each kernel release tarball currently provides the following files:
 * `/boot/kernel8.img` (this is the bootable 64-bit kernel);
