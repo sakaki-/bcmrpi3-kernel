@@ -22,7 +22,7 @@ Each kernel release tarball currently provides the following files:
 * `/boot/COPYING.linux` (the kernel's license file);
 * `/boot/config` (the configuration used to build the kernel);
 * `/boot/System.map` (the kernel's symbol table);
-* `/boot/bcm-2710-rpi-3-b.dtb`, `/boot/bcm-2710-rpi-3-b-plus.dtb` and `/boot/bcm-2837-rpi-3-b.dtb` (and, from `4.19.25.20190305` onwards, `bcm2710-rpi-cm3.dtb`) (the device tree blobs);
+* `/boot/bcm-2710-rpi-3-b.dtb`, `/boot/bcm-2710-rpi-3-b-plus.dtb` and `/boot/bcm-2837-rpi-3-b.dtb` (and, from `4.19.25.20190305` onwards, `/boot/bcm2710-rpi-cm3.dtb`) (the device tree blobs);
 * `/boot/overlays/...` (the device tree blob overlays) (from `4.19.25.20190305`);
 * `/lib/modules/<kernel release name>/...` (the module set for the kernel);
 * `/lib/firmware/...` (the kernel-built firmware, for [< 4.14 only](http://lkml.iu.edu/hypermail/linux/kernel/1709.1/04650.html)).
