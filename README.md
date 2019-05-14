@@ -22,8 +22,8 @@ Each kernel release tarball currently provides the following files:
 * `/boot/COPYING.linux` (the kernel's license file);
 * `/boot/config` (the configuration used to build the kernel);
 * `/boot/System.map` (the kernel's symbol table);
-* `/boot/bcm-2710-rpi-3-b.dtb`, `/boot/bcm-2710-rpi-3-b-plus.dtb` and `/boot/bcm-2837-rpi-3-b.dtb` (and, from `4.19.37.20190507` onwards, `/boot/bcm2710-rpi-cm3.dtb`) (the device tree blobs);
-* `/boot/overlays/...` (the device tree blob overlays) (from `4.19.37.20190507`);
+* `/boot/bcm-2710-rpi-3-b.dtb`, `/boot/bcm-2710-rpi-3-b-plus.dtb` and `/boot/bcm-2837-rpi-3-b.dtb` (and, from `4.19.42.20190514` onwards, `/boot/bcm2710-rpi-cm3.dtb`) (the device tree blobs);
+* `/boot/overlays/...` (the device tree blob overlays) (from `4.19.42.20190514`);
 * `/lib/modules/<kernel release name>/...` (the module set for the kernel);
 * `/lib/firmware/...` (the kernel-built firmware, for [< 4.14 only](http://lkml.iu.edu/hypermail/linux/kernel/1709.1/04650.html)).
 
@@ -33,7 +33,7 @@ The current kernel tarball may be downloaded from the link below (or via `wget`,
 
 Variant | Version | Most Recent Image
 :--- | ---: | ---:
-Kernel, dtbs, modules and (kernel) firmware | 4.19.37.20190507 | [bcmrpi3-kernel-4.19.37.20190507.tar.xz](https://github.com/sakaki-/bcmrpi3-kernel/releases/download/4.19.37.20190507/bcmrpi3-kernel-4.19.37.20190507.tar.xz)
+Kernel, dtbs, modules and (kernel) firmware | 4.19.42.20190514 | [bcmrpi3-kernel-4.19.42.20190514.tar.xz](https://github.com/sakaki-/bcmrpi3-kernel/releases/download/4.19.42.20190514/bcmrpi3-kernel-4.19.42.20190514.tar.xz)
 
 The corresponding kernel configuration (derived via `make bcmrpi3_defconfig`) may be viewed [here](https://github.com/sakaki-/bcmrpi3-kernel/blob/master/config).
 
@@ -44,8 +44,8 @@ The corresponding kernel configuration (derived via `make bcmrpi3_defconfig`) ma
 To deploy (assuming that your RPi3's micro SD-card's first partition is mounted as `/boot`, and you are already running a 64-bit RPi3 image, such as my [gentoo-on-rpi3-64bit](https://github.com/sakaki-/gentoo-on-rpi3-64bit)) simply download, untar into the root directory, and reboot:
 ```console
 pi64 ~ # cp /boot/kernel8.img{,.old}
-pi64 ~ # wget -c https://github.com/sakaki-/bcmrpi3-kernel/releases/download/4.19.37.20190507/bcmrpi3-kernel-4.19.37.20190507.tar.xz
-pi64 ~ # tar -xJf bcmrpi3-kernel-4.19.37.20190507.tar.xz -C /
+pi64 ~ # wget -c https://github.com/sakaki-/bcmrpi3-kernel/releases/download/4.19.42.20190514/bcmrpi3-kernel-4.19.42.20190514.tar.xz
+pi64 ~ # tar -xJf bcmrpi3-kernel-4.19.42.20190514.tar.xz -C /
 pi64 ~ # sync && reboot
 ```
 
