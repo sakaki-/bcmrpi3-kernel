@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 4.19.58 Kernel Configuration
+# Linux/arm64 4.19.59 Kernel Configuration
 #
 
 #
@@ -19,7 +19,7 @@ CONFIG_THREAD_INFO_IN_TASK=y
 #
 CONFIG_INIT_ENV_ARG_LIMIT=32
 # CONFIG_COMPILE_TEST is not set
-CONFIG_LOCALVERSION="-v8-8222f38b1cea"
+CONFIG_LOCALVERSION="-v8-d996dd9b8b6c"
 # CONFIG_LOCALVERSION_AUTO is not set
 CONFIG_BUILD_SALT=""
 CONFIG_DEFAULT_HOSTNAME="(none)"
@@ -1946,7 +1946,7 @@ CONFIG_SWPHY=y
 #
 # CONFIG_AMD_PHY is not set
 # CONFIG_AQUANTIA_PHY is not set
-# CONFIG_ASIX_PHY is not set
+# CONFIG_AX88796B_PHY is not set
 # CONFIG_AT803X_PHY is not set
 # CONFIG_BCM7XXX_PHY is not set
 # CONFIG_BCM87XX_PHY is not set
