@@ -37,7 +37,7 @@ Kernel, dtbs, modules and (kernel) firmware | 4.19.67.20190827 | [bcmrpi3-kernel
 
 The corresponding kernel configuration (derived via `make bcmrpi3_defconfig`) may be viewed [here](https://github.com/sakaki-/bcmrpi3-kernel/blob/master/config).
 
-> A list of all releases may be seen [here](https://github.com/sakaki-/bcmrpi3-kernel/releases).
+> A list of all releases may be seen [here](https://github.com/sakaki-/bcmrpi3-kernel/releases). For an equivalent kernel autobuild for the RPi4B, please see [here](https://github.com/sakaki-/bcm2711-kernel).
 
 ## <a name="installation"></a>Installation
 
