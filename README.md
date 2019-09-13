@@ -21,13 +21,16 @@ Each kernel release tarball currently provides the following files:
 * `/boot/kernel8.img` (this is the bootable 64-bit kernel);
 * `/boot/COPYING.linux` (the kernel's license file);
 * `/boot/config` (the configuration used to build the kernel);
-* `/boot/System.map` (the kernel's symbol table);
+* `/boot/Module.symvers.xz` (a table mapping exported symbols to provider, compressed);
+* `/boot/System.map.xz` (the kernel's symbol table, compressed);
 * `/boot/bcm-2710-rpi-3-b.dtb`, `/boot/bcm-2710-rpi-3-b-plus.dtb` and `/boot/bcm-2837-rpi-3-b.dtb` (and, from `4.19.71.20190910` onwards, `/boot/bcm2710-rpi-cm3.dtb`) (the device tree blobs);
 * `/boot/overlays/...` (the device tree blob overlays) (from `4.19.71.20190910`);
 * `/lib/modules/<kernel release name>/...` (the module set for the kernel);
 * `/lib/firmware/...` (the kernel-built firmware, for [< 4.14 only](http://lkml.iu.edu/hypermail/linux/kernel/1709.1/04650.html)).
 
 > The `/boot/bcm-2710-rpi-3-b-plus.dtb` file is only included in more recent builds.
+
+> The `/boot/Module.symvers.xz` file is only included in more recent builds. The `/boot/System.map.xz` is supplied in compressed form only in recent builds.
 
 The current kernel tarball may be downloaded from the link below (or via `wget`, or via the corresponding `bcmrpi-kernel-bin` ebuild, per the [instructions following](#installation)):
 
