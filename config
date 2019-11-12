@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 4.19.81 Kernel Configuration
+# Linux/arm64 4.19.83 Kernel Configuration
 #
 
 #
@@ -19,7 +19,7 @@ CONFIG_THREAD_INFO_IN_TASK=y
 #
 CONFIG_INIT_ENV_ARG_LIMIT=32
 # CONFIG_COMPILE_TEST is not set
-CONFIG_LOCALVERSION="-v8-bbdf44a11a06"
+CONFIG_LOCALVERSION="-v8-3c235dcfe80a"
 # CONFIG_LOCALVERSION_AUTO is not set
 CONFIG_BUILD_SALT=""
 CONFIG_DEFAULT_HOSTNAME="(none)"
@@ -5163,7 +5163,7 @@ CONFIG_HTU21=m
 # CONFIG_ADJD_S311 is not set
 # CONFIG_AL3320A is not set
 # CONFIG_APDS9300 is not set
-# CONFIG_APDS9960 is not set
+CONFIG_APDS9960=m
 # CONFIG_BH1750 is not set
 # CONFIG_BH1780 is not set
 # CONFIG_CM32181 is not set
