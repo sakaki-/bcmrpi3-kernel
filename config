@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 4.19.83 Kernel Configuration
+# Linux/arm64 4.19.84 Kernel Configuration
 #
 
 #
@@ -19,7 +19,7 @@ CONFIG_THREAD_INFO_IN_TASK=y
 #
 CONFIG_INIT_ENV_ARG_LIMIT=32
 # CONFIG_COMPILE_TEST is not set
-CONFIG_LOCALVERSION="-v8-3c235dcfe80a"
+CONFIG_LOCALVERSION="-v8-886bda7dfd42"
 # CONFIG_LOCALVERSION_AUTO is not set
 CONFIG_BUILD_SALT=""
 CONFIG_DEFAULT_HOSTNAME="(none)"
@@ -4861,6 +4861,7 @@ CONFIG_COMMON_CLK=y
 CONFIG_COMMON_CLK_XGENE=y
 # CONFIG_COMMON_CLK_PWM is not set
 # CONFIG_COMMON_CLK_VC5 is not set
+# CONFIG_CLK_RASPBERRYPI is not set
 # CONFIG_HWSPINLOCK is not set
 
 #
@@ -4895,7 +4896,6 @@ CONFIG_BCM2835_MBOX=y
 #
 # CONFIG_RPMSG_QCOM_GLINK_RPM is not set
 # CONFIG_RPMSG_VIRTIO is not set
-# CONFIG_SOUNDWIRE is not set
 
 #
 # SOC (System On Chip) specific Drivers
