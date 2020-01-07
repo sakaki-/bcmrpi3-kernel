@@ -1,13 +1,13 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 4.19.89 Kernel Configuration
+# Linux/arm64 4.19.93 Kernel Configuration
 #
 
 #
-# Compiler: aarch64-unknown-linux-gnu-gcc (Gentoo 8.3.0-r1 p1.1) 8.3.0
+# Compiler: aarch64-unknown-linux-gnu-gcc (Gentoo 9.2.0-r2 p3) 9.2.0
 #
 CONFIG_CC_IS_GCC=y
-CONFIG_GCC_VERSION=80300
+CONFIG_GCC_VERSION=90200
 CONFIG_CLANG_VERSION=0
 CONFIG_CC_HAS_ASM_GOTO=y
 CONFIG_IRQ_WORK=y
@@ -19,7 +19,7 @@ CONFIG_THREAD_INFO_IN_TASK=y
 #
 CONFIG_INIT_ENV_ARG_LIMIT=32
 # CONFIG_COMPILE_TEST is not set
-CONFIG_LOCALVERSION="-v8-b85f76a63d5f"
+CONFIG_LOCALVERSION="-v8-9ee95326a181"
 # CONFIG_LOCALVERSION_AUTO is not set
 CONFIG_BUILD_SALT=""
 CONFIG_DEFAULT_HOSTNAME="(none)"
