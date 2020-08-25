@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 5.4.58 Kernel Configuration
+# Linux/arm64 5.4.59 Kernel Configuration
 #
 
 #
@@ -21,7 +21,7 @@ CONFIG_THREAD_INFO_IN_TASK=y
 #
 CONFIG_INIT_ENV_ARG_LIMIT=32
 # CONFIG_COMPILE_TEST is not set
-CONFIG_LOCALVERSION="-v8-9bbdaa0c1a14"
+CONFIG_LOCALVERSION="-v8-20af8baa755e"
 # CONFIG_LOCALVERSION_AUTO is not set
 CONFIG_BUILD_SALT=""
 CONFIG_DEFAULT_HOSTNAME="(none)"
@@ -4622,7 +4622,7 @@ CONFIG_USB_HIDDEV=y
 #
 # I2C HID support
 #
-# CONFIG_I2C_HID is not set
+CONFIG_I2C_HID=m
 # end of I2C HID support
 # end of HID support
 
