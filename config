@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 5.4.65 Kernel Configuration
+# Linux/arm64 5.4.68 Kernel Configuration
 #
 
 #
@@ -21,7 +21,7 @@ CONFIG_THREAD_INFO_IN_TASK=y
 #
 CONFIG_INIT_ENV_ARG_LIMIT=32
 # CONFIG_COMPILE_TEST is not set
-CONFIG_LOCALVERSION="-v8-0cb2a1174a38"
+CONFIG_LOCALVERSION="-v8-e655052ab35e"
 # CONFIG_LOCALVERSION_AUTO is not set
 CONFIG_BUILD_SALT=""
 CONFIG_DEFAULT_HOSTNAME="(none)"
@@ -2766,7 +2766,7 @@ CONFIG_I2C_BCM2708_BAUDRATE=100000
 # I2C system bus drivers (mostly embedded / system-on-chip)
 #
 CONFIG_I2C_BCM2835=m
-CONFIG_I2C_BRCMSTB=y
+# CONFIG_I2C_BRCMSTB is not set
 # CONFIG_I2C_CADENCE is not set
 # CONFIG_I2C_CBUS_GPIO is not set
 # CONFIG_I2C_DESIGNWARE_PLATFORM is not set
